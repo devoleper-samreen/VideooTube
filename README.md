@@ -4,6 +4,12 @@
 
 VideoTube is a full-stack video-sharing platform built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to upload, view, and interact with videos, similar to YouTube.
 
+---
+
+![Feed](Backend/public/temp/1.PNG)
+
+---
+
 ## Features
 
 - User Authentication (Sign Up, Login, Logout, Email Verification)
@@ -12,12 +18,6 @@ VideoTube is a full-stack video-sharing platform built using the MERN (MongoDB, 
 - Commenting System
 - User Profiles
 - Search Functionality
-
----
-
-![Feed](Backend/public/temp/1.PNG)
-
----
 
 ---
 
