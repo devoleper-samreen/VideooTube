@@ -20,9 +20,11 @@ dotenv.config({
 const app = express();
 const port = process.env.PORT || 5000;
 const corsOptions = {
-  origin: process.env.FRONTEND_HOST,
+  origin:
+    "https://video-tube-5k2o6z7fy-devoleper-samreens-projects.vercel.app" ||
+    process.env.FRONTEND_HOST,
   credentials: true,
-  optionSuccesStatus: 200,
+  optionSuccessStatus: 200,
 };
 
 //middlewares
