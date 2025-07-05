@@ -26,54 +26,52 @@ function Signup() {
     }
   };
   return (
-    <>
-      <div className="mx-auto mt-24 w-[40%] shadow-md px-5 py-10 border-t-4 border-blue-400 rounded">
-        <h1 className="text-4xl text-center mb-4 font-sans">Create Account</h1>
-        <TextField
-          label="Enter Name"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <TextField
-          type="email"
-          label="Enter Email"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          type="password"
-          label="Enter Password"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          size="large"
-          sx={{ marginTop: "30px" }}
-          onClick={handleRegister}
-        >
-          {isLoading ? "Loading..." : "Submit"}
-        </Button>
-        <p className="text-center mt-8">
-          do you want to login?
-          <Link to="/login" className="text-blue-700">
-            {" "}
-            Login
-          </Link>
-        </p>
-      </div>
-    </>
+    <div className="mx-auto mt-24 w-[40%] shadow-md px-5 py-10 border-t-4 border-blue-400 rounded">
+      <h1 className="text-4xl text-center mb-4 font-sans">Create Account</h1>
+      <TextField
+        label="Enter Name"
+        variant="outlined"
+        fullWidth
+        margin="normal"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <TextField
+        type="email"
+        label="Enter Email"
+        variant="outlined"
+        fullWidth
+        margin="normal"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <TextField
+        type="password"
+        label="Enter Password"
+        variant="outlined"
+        fullWidth
+        margin="normal"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button
+        variant="contained"
+        color="primary"
+        fullWidth
+        size="large"
+        sx={{ marginTop: "30px" }}
+        onClick={handleRegister}
+      >
+        {isLoading ? "Loading..." : "Submit"}
+      </Button>
+      <p className="text-center mt-8">
+        do you want to login?
+        <Link to="/login" className="text-blue-700">
+          {" "}
+          Login
+        </Link>
+      </p>
+    </div>
   );
 }
 

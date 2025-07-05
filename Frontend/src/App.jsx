@@ -7,7 +7,8 @@ import Layout from "./layout/layout";
 import { lazy, Suspense } from "react";
 
 const Feed = lazy(() => import("./components/Feed"));
-const Signup = lazy(() => import("./components/Signup"));
+// const Signup = lazy(() => import("./components/Signup"));
+import Signup from "./components/Signup";
 const Login = lazy(() => import("./components/Login"));
 const OTPInput = lazy(() => import("./components/Otp"));
 const ForgotPassword = lazy(() => import("./components/ForgotPassword"));
