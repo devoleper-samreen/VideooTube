@@ -11,7 +11,6 @@ import {
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import Loader from "./loader";
 
 const ProfileUpdate = () => {
   const navigate = useNavigate();
@@ -158,7 +157,7 @@ const ProfileUpdate = () => {
           }}
           disabled={isLoading}
         >
-          {isLoading ? <Loader /> : "Save Profile"}
+          {isLoading ? "Loading..." : "Save Profile"}
         </Button>
       </form>
     </Box>
